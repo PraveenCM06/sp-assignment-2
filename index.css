@@ -489,6 +489,91 @@ main {
   text-align: center;
 }
 
+
+
+#modalwrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(86, 86, 86, 0.418);
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+  width: 70%;
+  height: 85%;
+  overflow: hidden;
+}
+
+.modal-content-1{
+  background:url('./images/top-glitter.svg'), url('./images/bottom-glitter.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 5%, 50% 95%;
+  background-color: beige;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+align-items: center;
+text-align: center;
+}
+.modal-circle{
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-image: url('./images/circle-gold.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 2;
+  height: 100%;
+  position: relative;
+  background-color: rgb(255, 255, 243);
+  padding: 2rem 1rem;
+}
+
+.close-modal-btn{
+  position: absolute;
+  top: .5rem;
+  right: 1.5rem;
+  background-color: transparent;
+  border: none;
+  font-size: xx-large;
+  color: grey;
+  font-weight: bolder;
+}
+.close-modal-btn:hover{
+  color: black;
+}
+.modal-links-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.modal-text{
+  padding: 3rem;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+.modal-card-wrapper{
+  display: flex;
+  justify-content: center;
+}
 @media (max-width: 700px) {
   .cards-holder {
     display: flex;
@@ -517,8 +602,51 @@ main {
   .green-card {
     margin-left: 1rem;
   }
+  #modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+  }
+  .modal-content-1{
+    background:url('./images/top-glitter.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: beige;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  align-items: center;
+  text-align: center;
+  }
+  .close-modal-btn-2{
+    display: none;
+  }
+  .modal-content-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    overflow-y: scroll;
+    flex: 2;
+    height: 100%;
+    position: relative;
+    background-color: rgb(255, 255, 243);
+    padding: 2rem 1rem;
+  }
+  .modal-text{
+    padding: 1rem;
+    background-color: antiquewhite;
+    border-radius: 10px;
+  }
 }
-
 /*********************************************************************SECTION 2****************************************/
 
 .timeoutimg {

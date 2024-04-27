@@ -10,3 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function openModal(){
+  const modal = document.getElementById("modalwrapper");
+  modal.style.display= 'flex';
+  console.log("open modal");
+}
+
+function closeModal(){
+  const modal = document.getElementById("modalwrapper");
+  modal.style.display= 'none';
+  console.log("close modal");
+}
