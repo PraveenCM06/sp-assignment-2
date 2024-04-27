@@ -376,11 +376,13 @@ main {
   font-style: normal;
 }
 .plain-gold-circle {
-
+  height: 7rem;
+  width: 7rem;
   border-radius: 50%;
   outline: 7px solid white;
   transform: translateY(40%);
   background-image: url("./images/circle-gold.png");
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
