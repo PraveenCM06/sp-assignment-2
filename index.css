@@ -353,6 +353,15 @@ main {
   }
 }
 
+@media (max-width:500px) {
+  .main-circles-list {
+    margin-top: 13rem;
+    height: 11rem;
+    display: flex;
+    align-items: end;
+  }
+}
+
 /**************************************************************SECTION1**************************************/
 
 .section1 {
