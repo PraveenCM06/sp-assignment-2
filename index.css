@@ -376,8 +376,8 @@ main {
   font-style: normal;
 }
 .plain-gold-circle {
-  height: 8rem;
-  width: 8rem;
+  height: 8.5rem;
+  width: 8.5rem;
   border-radius: 50%;
   outline: 7px solid white;
   transform: translateY(40%);
